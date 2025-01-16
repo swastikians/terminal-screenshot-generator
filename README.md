@@ -2,6 +2,8 @@
 
 This is a simple script that generates a terminal screenshot.
 
+![Sample Output](sample/sample.jpeg)
+
 ## Usage
 
 1. Install the dependencies by running `npm install` command.
