@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "generate": "tsx ./index.ts"
+  },
+  "dependencies": {
+    "canvacord": "^6.0.2",
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.7",
+    "@types/react": "^19.0.7",
+    "tsx": "^4.19.2"
+  }
+}
