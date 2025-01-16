@@ -1,7 +1,7 @@
 {
   "type": "module",
   "scripts": {
-    "generate": "tsx ./index.ts"
+    "generate": "tsx ./src/index.ts"
   },
   "dependencies": {
     "canvacord": "^6.0.2",

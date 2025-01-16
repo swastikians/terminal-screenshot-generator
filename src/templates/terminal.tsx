@@ -9,10 +9,10 @@ interface TerminalProps {
 
 function Terminal({ contents, name }: TerminalProps) {
   return (
-    <div tw="h-full w-full flex flex-col">
-      <div tw="bg-[#2e2e2e] flex w-full pt-1 pl-2 items-center">
-        <div tw="bg-[#0c0c0c] h-11 w-75 rounded-t-lg flex flex-row items-center justify-between px-2">
-          <p tw="text-white flex items-center">
+    <div className="h-full w-full flex flex-col">
+      <div className="bg-[#2e2e2e] flex w-full pt-1 pl-2 items-center">
+        <div className="bg-[#0c0c0c] h-11 w-75 rounded-t-lg flex flex-row items-center justify-between px-2">
+          <p className="text-white flex items-center">
             <svg
               stroke="#d2d2d2"
               fill="none"
@@ -29,7 +29,7 @@ function Terminal({ contents, name }: TerminalProps) {
                 d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"
               ></path>
             </svg>
-            <span tw="ml-2">C:\Users\{name}\dotnet</span>
+            <span className="ml-2">C:\Users\{name}\program</span>
           </p>
           <svg
             stroke="currentColor"
@@ -47,7 +47,7 @@ function Terminal({ contents, name }: TerminalProps) {
             ></path>
           </svg>
         </div>
-        <div tw="flex ml-4">
+        <div className="flex ml-4">
           <svg
             stroke="currentColor"
             fill="white"
@@ -59,7 +59,7 @@ function Terminal({ contents, name }: TerminalProps) {
           >
             <path d="M14 7v1H8v6H7V8H1V7h6V1h1v6h6z"></path>
           </svg>
-          <div tw="border-l-[#373737] border-2 h-5 mx-2 flex"></div>
+          <div className="border-l-[#373737] border-2 h-5 mx-2 flex"></div>
           <svg
             stroke="currentColor"
             fill="white"
@@ -77,7 +77,7 @@ function Terminal({ contents, name }: TerminalProps) {
           </svg>
         </div>
       </div>
-      <div tw="bg-[#0c0c0c] h-full flex flex-col w-full text-[#a1a1a1] px-2 pt-2 pb-6">
+      <div className="bg-[#0c0c0c] h-full flex flex-col w-full text-[#a1a1a1] px-2 pt-2 pb-6">
         {contents.map((content, index) => (
           <p
             key={index}
